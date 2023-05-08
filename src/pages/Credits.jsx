@@ -5,13 +5,13 @@ const Credits = () => {
       <h1>Credits</h1>
       <p>
         This project depends not only on a huge number of open source libraries,
-        but example code from wide range of developers. (I have tried to keep
-        track of all who have helped, but please let me know if you feel you
-        deserve credit and aren't on this list.)
+        but example code from wide range of developers, too. 
       </p>
+      <h2>People</h2>
+      <ul>
+        <li>Thanks to Thanh Minh for this <a href="https://codesandbox.io/s/elated-fire-198px">texture loading technique</a>.</li>
+      </ul>
       <h2>Libraries</h2>
-      Here's a list of the main packages with their respective links and short
-      descriptions:
       <ol>
         <li>
           <a href="https://threejs.org/" target="_blank">
