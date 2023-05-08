@@ -4,6 +4,7 @@ import { AuthContext } from "./components/Auth";
 import { useStoreActions, useStoreState } from "easy-peasy";
 
 import Login from "./pages/Login";
+import Credits from "./pages/Credits";
 import Dashboard from "./pages/Dashboard";
 import VR from "./pages/VR";
 import Interface from "./pages/Interface";
@@ -63,11 +64,7 @@ const App = () => {
     },
     {
       path: "/credits",
-      element: authCtx.currentUser ? (
-        <LoggedIn component={<Dashboard section="credits" />} />
-      ) : (
-        <Login />
-      ),
+      element: <Credits />,
     },
     {
       path: "/vr",

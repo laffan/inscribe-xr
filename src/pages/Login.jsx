@@ -47,7 +47,7 @@ const Login = () => {
           </p>
         </div>
         <div className="Login__Links">
-          <a href="./">Credits</a> | <a href="./">GitHub</a>
+          <a href="/credits" target="_blank">Credits</a> | <a href="https://github.com/laffan/inscribe-xr" target="_blank">GitHub</a>
         </div>
         <button className="Login__SignInBtn" onClick={signIn}></button>
       </main>

@@ -3,7 +3,6 @@ import Layout from "./../components/desktop/shared/Layout";
 import Reflections from "./../components/desktop/sections/Reflections/Reflections";
 import Prompts from "./../components/desktop/sections/Prompts/Prompts";
 import Environments from "./../components/desktop/sections/Environments/Environments";
-import Credits from "./../components/desktop/sections/Credits/Credits";
 import SectionNav from "./../components/desktop/shared/SectionNav";
 
 const Dashboard = ({ section }) => {
@@ -26,7 +25,6 @@ const Dashboard = ({ section }) => {
       {currentSection === "reflections" && <Reflections />}
       {currentSection === "prompts" && <Prompts />}
       {currentSection === "environments" && <Environments />}
-      {currentSection === "credits" && <Credits />}
     </Layout>
   );
 };
