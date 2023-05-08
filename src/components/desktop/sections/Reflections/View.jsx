@@ -32,7 +32,6 @@ const View = () => {
         >
           Delete
         </button>
-        <a href="#">Download</a>
       </div>
     </div>
   );

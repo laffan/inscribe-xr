@@ -39,9 +39,9 @@ const App = () => {
       ),
     },
     {
-      path: "/environments",
+      path: "/welcome",
       element: authCtx.currentUser ? (
-        <LoggedIn component={<Dashboard section="environments" />} />
+        <LoggedIn component={<Dashboard section="welcome" />} />
       ) : (
         <Login />
       ),

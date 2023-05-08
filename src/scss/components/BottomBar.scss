@@ -1,4 +1,5 @@
 .BottomBar {
+  padding-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
     @include breakpoint(sm) {

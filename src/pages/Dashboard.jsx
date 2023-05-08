@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "./../components/desktop/shared/Layout";
 import Reflections from "./../components/desktop/sections/Reflections/Reflections";
 import Prompts from "./../components/desktop/sections/Prompts/Prompts";
-import Environments from "./../components/desktop/sections/Environments/Environments";
+import Welcome from "./../components/desktop/sections/Welcome/Welcome";
 import SectionNav from "./../components/desktop/shared/SectionNav";
 
 const Dashboard = ({ section }) => {
@@ -19,12 +19,12 @@ const Dashboard = ({ section }) => {
     <Layout pageName={`Dashboard`}>
       <SectionNav
         currentSection={currentSection}
-        sections={[  "prompts", "reflections" ]}
+        sections={[ "welcome", "prompts", "reflections" ]}
         handleSectionSelect={handleSectionSelect}
       />
       {currentSection === "reflections" && <Reflections />}
       {currentSection === "prompts" && <Prompts />}
-      {currentSection === "environments" && <Environments />}
+      {currentSection === "welcome" && <Welcome />}
     </Layout>
   );
 };
