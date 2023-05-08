@@ -1,0 +1,27 @@
+.AddImagePrompt {
+  background-color: white;
+
+  &__DragArea {
+    padding: 30px;
+    text-align: center;
+  }
+  &__NewFiles {
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+    background: #ffffff;
+  }
+
+  &__UploadButtons button {
+    margin: 0 5px;
+        @include formButton;
+
+  }
+
+  &__NewFile {
+    display: inline;
+    margin: 5px;
+  }
+
+  
+}

@@ -1,0 +1,9 @@
+.Reflections {
+  @include dashboardPane;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+
+  @include breakpoint(mdsm) {
+    grid-template-columns: 1fr;
+  }
+}

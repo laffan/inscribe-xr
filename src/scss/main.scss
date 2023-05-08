@@ -1,0 +1,58 @@
+// Global
+html,
+body {
+  display: block;
+  height: 100%;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  background-color: #eeeeee !important;
+}
+
+canvas {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+}
+
+@import "global/mixins";
+@import "global/typography";
+
+// Themes
+@import "themes/mui-theme";
+
+// Components
+@import "components/Layout";
+@import "components/SectionNav";
+@import "components/Container";
+@import "components/BottomBar";
+@import "components/Modal";
+@import "components/Dashboard";
+
+@import "components/Environments";
+@import "components/Login";
+@import "components/Credits";
+
+@import "components/Prompts/Prompts";
+@import "components/Prompts/AddPrompt";
+@import "components/Prompts/AddImagePrompt";
+@import "components/Prompts/AddTextPrompt";
+@import "components/Prompts/ImagePrompt";
+@import "components/Prompts/TextPrompt";
+@import "components/Prompts/PromptList";
+
+@import "components/Reflections/Reflections";
+@import "components/Reflections/View";
+@import "components/Reflections/List";
+@import "components/Reflections/PromptPreview";

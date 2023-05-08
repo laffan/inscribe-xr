@@ -1,0 +1,31 @@
+.BottomBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    @include breakpoint(sm) {
+      padding: 10px 10px 30px 10px;
+      background: black;
+    }
+
+  p,
+  a {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: white;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+
+  &__Left {
+  }
+  &__Right {
+    text-align: right;
+    a {
+      font-weight: bold;
+    }
+  }
+}

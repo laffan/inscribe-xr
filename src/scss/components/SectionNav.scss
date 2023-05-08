@@ -1,0 +1,117 @@
+.SectionNav {
+  background-color: white;
+  @include breakpoint(sm) {
+    background-color: transparent;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    @include breakpoint(sm) {
+      float: right;
+      margin-top: -45px;
+    }
+  }
+  li {
+    list-style: none;
+    margin: 10px;
+    @include breakpoint(sm) {
+      float: left;
+      margin: 5px
+    }
+  }
+
+  &__VRLink {
+    width: 200px;
+    height: 150px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      .SectionNav__VRLinkMask {
+        transform: scale(1.1);
+      }
+      .SectionNav__VRLinkImg {
+        transform: scale(0.7);
+      }
+      .SectionNav__VRLinkArrow {
+        transform: scale(0.7);
+        background-position: center 80px;
+      }
+    }
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+
+  &__VRLinkArrow {
+    display: block;
+    background-image: url(/assets/img/vr_button_arrow.png);
+    position: absolute;
+    background-position: center 90px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 150px;
+    z-index: 10;
+    background-size: 50px auto;
+    transition: all 300ms;
+  }
+
+  &__VRLinkMask {
+    background-image: url(/assets/img/vr_button_mask.svg);
+    z-index: 5;
+    display: block;
+    width: 200px;
+    height: 150px;
+    background-size: 256px auto;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    transition: transform 300ms;
+  }
+  &__VRLinkImg {
+    display: block;
+    width: 200px;
+    height: 150px;
+    margin-top: -150px;
+    position: relative;
+    background-position: center center;
+    background-image: url(/assets/img/vr_button_img.jpg);
+    background-size: 250px 250px;
+    transition: transform 800ms;
+  }
+
+  button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    @include breakpoint(sm) {
+      text-align: center;
+      padding: 5px 10px;
+      color: gray;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__ActiveSection button {
+    background: #e5efff;
+    @include breakpoint(sm) {
+      background-color: gray;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.Container {
+  $topbarHeight: 75px;
+
+  display: block;
+  height: 100vh;
+
+  &__Top {
+    height: $topbarHeight;
+    background: #2B2B2B;
+    padding: 20px;
+  }
+  &__Bottom {
+    background: #F4F4F4;
+    display: flex;
+    height: calc(100vh - $topbarHeight);
+  }
+  &__Main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    
+    grid-template-columns: 300px 1fr;
+
+  }
+  &__Buttons {
+    // border: 1px solid #000;
+  }
+  &__Editor {
+    // border: 1px solid #000;
+  }
+}

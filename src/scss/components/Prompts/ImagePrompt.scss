@@ -1,0 +1,39 @@
+.ImagePrompt {
+  display: inline-block;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 150px 1fr;
+  border-radius: 5px;
+  background-color: rgba($color: #000000, $alpha: 0.07);
+  padding: 10px;
+
+  height: 100%;
+  &:hover button {
+    opacity: 1;
+  }
+
+  &__Img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+
+  }
+  button {
+    border: none;
+    opacity: .5;
+    background: transparent;
+    color: gray;
+    transition: opacity 300ms;
+    font-weight: bold;
+
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}

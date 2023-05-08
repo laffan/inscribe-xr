@@ -1,0 +1,26 @@
+.JoySlider-root {
+  margin-top: 30px;
+}
+
+.JoySlider-thumb {
+  color: white;
+}
+
+.JoySlider-rail,
+.JoySlider-track {
+  padding: 5px 0;
+}
+
+.JoySlider-mark {
+  padding: 3px;
+  border: 1px solid white;
+  color: #2b2b2b;
+  border-radius: 10px !important;
+  transform-origin: bottom center;
+  transition: 300ms transform;
+  &:hover {
+    color: #1a76d2;
+    transform: scale(2);
+    border: 1px solid black;
+  }
+}

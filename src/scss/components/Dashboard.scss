@@ -1,0 +1,9 @@
+.Dashboard {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin-bottom: 10px;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,41 @@
+.Layout {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+
+  &__Logo {
+    width: 100%;
+    height: 20px;
+    margin-top: 15px;
+    background-image: url(/assets/img/inscribe-logo.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    @include breakpoint(sm) {
+      margin-left: 15px;
+    }
+  }
+
+  &__Topbar {
+    @include innerWidth;
+
+    h2 {
+      margin: 0;
+    }
+  }
+  &__Content {
+    @include innerWidth;
+    border-radius: 5px;
+    
+  }
+  &__Bottombar {
+    margin-top: 30px;
+    background: black;
+    
+  }
+  &__BottombarInner {
+    @include innerWidth;
+    color: white;
+  }
+}

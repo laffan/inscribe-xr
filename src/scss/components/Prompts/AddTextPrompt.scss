@@ -1,0 +1,15 @@
+.AddTextPrompt {
+  background-color: white;
+  text-align: right;
+  textarea {
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+  }
+
+  button {
+    margin-right: 20px;
+    @include formButton;
+  }
+}

@@ -1,0 +1,47 @@
+.AddPrompt {
+  width: 90%;
+  margin: 30px auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #eeeeee;
+  overflow: hidden;
+
+  @include breakpoint(sm) {
+    width: #{calc(100vw - 22px)};
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid #eeeeee;
+    margin: 10px 10px 0px 10px;
+  }
+  // border: 1px solid black;
+
+  &__Types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__Types div {
+    text-align: center;
+  }
+
+  &__Types button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__Types--Active {
+    background-color: #ffffff;
+  }
+  &__Types--Active button {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,25 @@
+.View {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  overflow-y: scroll;
+
+  &__Content {
+    padding: 30px 50px;
+  }
+
+  &__DocumentActions {
+    border-top: 1px solid #d4d4d4;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  &__DocumentActions a {
+    color: gray;
+    font-size: 12px;
+    margin: 0 10px;
+    &:hover {
+      color: black;
+    }
+  }
+}
